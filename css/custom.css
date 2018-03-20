@@ -363,13 +363,13 @@
 .footer__logos .wk-panel-teaser + p {
     display: none;
 }
-.campaigns__icons .wk-panel-teaser img:hover {
-    transform: scale(1.1);
-    transition: .4s;
-}
 .list__item img:hover {
     transform: perspective( 1000px ) rotateX( -10deg );
     transform-origin: 50% 100%;
     box-shadow: -5px -10px 10px rgba(0,0,0,.4);
     transition: .6s;
+}
+.campaigns__icons .wk-panel-teaser img:hover {
+    transform: scale(1.1);
+    transition: .4s;
 }
