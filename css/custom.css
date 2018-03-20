@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:100,200,300,400,500,600,700,800,900|Fira+Sans:100,300,400,500,600,700,800,900&subset=latin-ext');
+
+.tm-header {
+    display: none;
+}
+.container, .uk-container {
+    padding: 0;
+}
+.container__hero > .uk-section {
+    padding: 0;
+}
+.container__hero .uk-container {
+    padding: 0;
+}
+.container__hero .uk-background-center-center {
+    background-position: 0 0;
+    background-size: cover;
+}
+.container__hero .uk-grid>* {
+    padding-left: 0;
+}
+.container__hero .uk-grid {
+    margin: 0;
+    padding: 0;
+}
+.bold {
+    font-weight: 700;
+}
+.hero {
+    padding: 30px 70px 120px;
+    position: relative;
+}
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 670px;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 130px;
+}
+.hero__content__title {
+    margin-bottom: 65px;
+    text-align: center;
+    font: 300 64px/70px 'Fira Sans Condensed', sans-serif;
+    color: #fff;
+}
+.hero__contant {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 55px;
+    right: 70px;
+    text-align: right;
+}
+.hero__contant p {
+    font: 18px/22px 'Fira Sans Condensed', sans-serif;
+    color: #fff;
+    margin: 0;
+}
+.hero__contant__phone {
+    margin-left: 45px;
+}
+.hero__contant a {
+    color: #F39200;
+    font: 700 18px/29px 'Fira Sans Condensed', sans-serif;
+}
+.light {
+    font-weight: 300;
+}
+.btn {
+    background: #F39200;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font: 700 20px/56px 'Fira Sans', sans-serif;
+}
+.btn:hover {
+    color: #000; 
+    transition: .4s;
+    background: #F39200;
+}
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.about__panel {
+    width: 25%;
+    height: 340px;
+}
+.about__panel:hover {
+    box-shadow: 0px 5px 10px rgba(0,0,0,.4), 0px -5px 10px rgba(0,0,0,.4);
+    transition: .3s;
+}
+.about__panel__text {
+    font: 700 1.891vw/2.312vw 'Fira Sans Condensed', sans-serif;
+    color: #fff;
+    padding: 20px 0 0 35px;
+    position: relative;
+}
+.about__panel__text::before {
+    position: absolute;
+    content: '';
+    top: 1.4764vw;
+    left: 0;
+    height: 25px;
+    width: 25px;
+}
+.about__panel--one {
+    background: url('/images/panel_edu.jpg') no-repeat 0 / cover;
+}
+.about__panel--two {
+    background: url('/images/panel_int.jpg') no-repeat 0 / cover;
+}
+.about__panel--three {
+    background: url('/images/panel_ado.jpg') no-repeat 0 / cover;
+}
+.about__panel--four {
+    background: url('/images/panel_pie.jpg') no-repeat 0 / cover;
+}
+.about__panel__text--one::before {
+    background: #FF0000
+}
+.about__panel__text--two::before {
+    background: #F39201;
+}
+.about__panel__text--three::before {
+    background: #7A9F16;
+}
+.about__panel__text--four::before {
+    background: #016AB4;
+}
+.option {
+    text-align: center;
+}
+.option__text__up {
+    max-width: 700px;
+    margin: 10px auto 40px;
+    color: #000;
+    font: 300 40px/60px 'Fira Sans Condensed', sans-serif;
+}
+.option__forms {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+.option__forms__main {
+    margin: 0 30px;
+}
+.option__text__down {
+    font: 300 40px 'Fira Sans Condensed', sans-serif;
+    color: #000;
+}
+.option__form {
+    width: 375px;
+    border-radius: 10px;
+    overflow: hidden;
+    border-color: #000;
+    box-shadow: -3px 3px 3px rgba(0,0,0,.2);
+}
+.option__form p {
+    color: #fff;
+    font: 18px 'Fira Sans Condensed', sans-serif;
+    background: #004899;
+    padding: 20px 0;
+    margin: 0;
+}
+.option__forms__phone form {
+    display: flex;
+}
+.option__forms__phone form .btn {
+    border-radius: 0;
+    border-bottom-right-radius: 10px;
+}
+.option__forms__phone form input[type="tel"] {
+    height: 56px;
+    border-top: none;
+    border-right: none;
+    color: #000;
+    font: 20px/56px 'Fira Sans', sans-serif;
+    border-bottom-left-radius: 10px;
+}
+.option__forms__main input[type="tel"] {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top: none;
+    color: #000;
+    font: 20px/56px 'Fira Sans', sans-serif;
+    height: 56px;
+}
+.option__forms__deposit .btn {
+    border-radius: 0;
+    border-bottom-right-radius: 10px;
+    float: right;
+}
+.option__forms__deposit .btn a {
+    color: #fff;
+}
+.option__forms__deposit .btn a:hover {
+    color: #000;
+    transition: .4s;
+}
+.campaigns__title {
+    color: #fff;
+    font: 40px'Fira Sans Condensed', sans-serif;
+    text-align: center;
+}
+.campaigns__icons > div {
+    max-width: 33%;
+}
+.campaigns__icons {
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto !important;
+}
+.campaigns__icons .wk-panel-title {
+    color: #fff;
+    font: 24px/34px 'Fira Sans Condensed', sans-serif;
+    max-width: 260px;
+    margin: 0 auto;
+}
+.container__campaigns > .uk-background-center-center  {
+    background-position: 0 0;
+    background-size: cover;
+}
+.list__title {
+    font: 300 40px 'Fira Sans Condensed', sans-serif;
+    color: #000;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 980px;
+    margin: 0 auto;
+}
+.list__item {
+    display: flex;
+    margin-bottom: 55px;
+}
+.list__item p {
+    max-width: 550px;
+    margin-top: 30px;
+    font: 300 24px/36px 'Fira Sans Condensed', sans-serif;
+    color: #000;
+}
+.list__item--odd p {
+    margin-left: 55px;
+    text-align: left;
+}
+.list__item--even p {
+    margin-right: 55px;
+    text-align: right;
+}
+.list__text--down {
+    color: #000;
+    font: 40px 'Fira Sans Condensed', sans-serif;
+    text-align: center;
+}
+.container__advantages {
+    background: #ECECEC;
+    border-top: 2px #95B34A solid;
+    padding-bottom: 40px;
+}
+.advantages {
+    max-width: 1075px;
+    margin: 0 auto !important;
+    justify-content: space-between;
+}
+.advantages .wk-panel-title {
+    color: #000;
+    font: 700 30px 'Fira Sans Condensed', sans-serif;  
+    margin-bottom: 40px;
+}
+.advantages > div {
+    max-width: 420px;
+}
+.advantages p {
+    margin: 0 0 40px 50px;
+    font: 300 18px/30px 'Fira Sans Condensed', sans-serif;
+    position: relative;
+    color: #000;
+}
+.advantages p::before {
+    position: absolute;
+    content: '';
+    left: -50px;
+    top: 5px;
+    width: 25px;
+    height: 25px;
+    background: url('/images/check.png') no-repeat 0 0/ contain;
+}
+.form--down {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.form--down p {
+    font: 300 40px/50px 'Fira Sans Condensed', sans-serif;
+    color: #fff;
+    text-align: right;
+    max-width: 510px;
+}
+.form--down form p {
+    color: #fff;
+    font: 18px 'Fira Sans Condensed', sans-serif;
+    background: #004899;
+    padding: 20px 0;
+    margin: 0;
+    text-align: center;
+    width: 370px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.form--down input[type=tel]:not([class*=uk-]) {
+    height: 60px;
+    line-height: 60px;
+    display: block;
+    color: #000;
+    font: 20px/60px 'Fira Sans', sans-serif;
+}
+.form--down input[type=submit]:not([class*=uk-]) {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    width: 370px;
+    box-shadow: -3px 3px 3px rgba(0,0,0,.2);
+}
+.form--down form {
+    margin-top: 10px;
+}
+.form--down__text {
+    font: 24px 'Fira Sans Condensed', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+}
+.footer__logos > div {
+    width: 12%;
+    margin: 20px auto;
+}
+.container__brand {
+    background: #0069B3;
+    text-align: center;
+    height: 70px;
+}
+.container__brand p {
+    font: 18px/70px 'Fira Sans Condensed', sans-serif;
+    color: #fff;
+}
+.container__brand p a {
+    color: #fff;
+}
+.footer__logos .wk-panel-teaser + p {
+    display: none;
+}
+.campaigns__icons .wk-panel-teaser img:hover {
+    transform: scale(1.1);
+    transition: .4s;
+}
+.list__item img:hover {
+    transform: perspective( 1000px ) rotateX( -10deg );
+    transform-origin: 50% 100%;
+    box-shadow: -5px -10px 10px rgba(0,0,0,.4);
+    transition: .6s;
+}
