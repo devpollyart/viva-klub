@@ -75,9 +75,8 @@
     font: 700 20px/56px 'Fira Sans', sans-serif;
 }
 .btn:hover {
-    color: #000; 
     transition: .4s;
-    background: #F39200;
+    background: #f37000;
 }
 .about {
     display: flex;
@@ -196,8 +195,8 @@
 .option__forms__deposit .btn a {
     color: #fff;
 }
-.option__forms__deposit .btn a:hover {
-    color: #000;
+.option__forms__deposit .btn:hover {
+    background: #f37000;
     transition: .4s;
 }
 .campaigns__title {
@@ -363,13 +362,150 @@
 .footer__logos .wk-panel-teaser + p {
     display: none;
 }
+.campaigns__icons .wk-panel-teaser img {
+    transform: scale(0.9);
+}
+.campaigns__icons .wk-panel-teaser img:hover {
+    transform: scale(1);
+    transition: .4s;
+}
 .list__item img:hover {
     transform: perspective( 1000px ) rotateX( -10deg );
     transform-origin: 50% 100%;
-    box-shadow: -5px -10px 10px rgba(0,0,0,.4);
+    box-shadow: -5px -10px 30px rgba(0,0,0,.1);
     transition: .6s;
+    cursor: pointer;
 }
-.campaigns__icons .wk-panel-teaser img:hover {
-    transform: scale(1.1);
-    transition: .4s;
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.4);
+    display: none;
+    z-index: 2000;
 }
+.popup__content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: yellow;
+    overflow: hidden;
+}
+.popup__content img {
+    width: 100%;
+}
+@media (max-width: 1199px) {
+    .about__panel {
+        width: 50%;
+    }
+    .about {
+        flex-wrap: wrap;
+    }
+    .option__forms {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .option__forms__main {
+        margin: 30px 0;
+    }
+    .about__panel__text {
+        font-size: 22px;
+        line-height: 16px;
+    }
+}
+@media (max-width: 992px) { 
+    .tm-header-mobile  {
+        display: none;
+    }
+    .about__panel__text {
+        font-size: 20px;
+        line-height: 10px;
+    }
+    .campaigns__icons .wk-panel-title {
+        padding: 0 10px;
+    }
+    .list__item img {
+        object-fit: contain;
+    }
+    .advantages {
+        justify-content: center;
+    }
+    .form--down {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .form--down p {
+        font-size: 30px;
+        line-height: 34px; 
+        text-align: center;
+    }
+    .container__form--down .uk-background-center-center {
+        background-size: cover;
+    }
+    .footer__logos > div {
+        width: 25%;
+    }
+}
+@media (max-width: 767px) { 
+    .about__panel {
+        width: 100%;
+    }
+    .option__text__up, .option__text__down {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .hero__contant {
+        flex-direction: column;
+    }
+    .hero__contant__phone {
+        margin-top: 20px;
+    }
+    .campaigns__icons > div {
+        max-width: 50%;
+    }
+    .list__item--even {
+        flex-direction: column-reverse;
+        margin-bottom: 30px;
+    }
+    .list__item--odd {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .list__item p {
+        margin: 20px;
+        text-align: center;
+    }
+    .footer__logos > div {
+        width: 50%;
+    }
+}
+@media (max-width: 575px) {
+    .form--down__text {
+        font-size: 20px;
+    }
+    .form--down form p, .form--down input[type=submit]:not([class*=uk-]),.form--down input[type=tel]:not([class*=uk-]) {
+        width: 200px;
+        margin: 0 auto;
+    }
+    .form--down p {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 0 10px;
+    }
+    .advantages p {
+        padding-right: 10px;
+    }
+    .list__text--down, .list__title {
+        font-size: 32px;
+        padding: 0 10px;
+    }
+    .campaigns__icons > div {
+        max-width: 100%;
+    }
+}
+
