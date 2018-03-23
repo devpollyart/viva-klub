@@ -74,6 +74,13 @@
     color: #fff;
     font: 700 20px/56px 'Fira Sans', sans-serif;
 }
+.btn__formularz {
+    border-radius: 0;
+    width: 100%;
+}
+.btn.uk-active, .btn:active, .uk-button-default.uk-active, .uk-button-default:active , .btn:focus, .btn:hover, .uk-button-default:focus, .uk-button-default:hover{
+    background: #F39200;
+}
 .btn:hover {
     transition: .4s;
     background: #f37000;
@@ -397,6 +404,89 @@
 .popup__content img {
     width: 100%;
 }
+.formularz .container__brand, .formularz .container__footer {
+    display: none;
+}
+.formularz__intro {
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.formularz #userForm {
+    width: 1200px;
+    margin: 0 auto;
+}
+.formularz__intro__text p, .formularz__intro__title {
+    font: 14px 'Fira Sans',sans-serif;
+    color: #000;
+    margin: 0;
+}
+.formularz__intro__title {
+    font-size: 16px;
+    font-weight: 900;
+}
+div.formBody {
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: center;
+}
+input[type="checkbox"]:not([class*="uk-"]) {
+    width: 25px;
+    height: 25px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+.formResponsive .formHorizontal .formControlLabel {
+    text-align: left;
+    padding-left: 5px;
+    line-height: 40px;
+}
+.formularz__intro__text .bold {
+    font-weight: 900;
+}
+.formularz__intro__text{
+    margin-left: 20px;
+}
+.formControlLabel {
+    background: #ccc;
+    font-weight: 700;
+}
+.formResponsive .formHorizontal .rsform-block-kwota .formControlLabel {
+    width: 40%;
+}
+.formResponsive .formHorizontal .formSpan4 .formControlLabel {
+    width: 30%;
+}
+.formResponsive .formHorizontal .formSpan6 .formControlLabel {
+    width: 40%;
+}
+.formResponsive .formHorizontal .formSpan12 .formControlLabel {
+    width: 30%;
+}
+.formResponsive .formHorizontal .rsform-block-donate .formControlLabel {
+    background: none;
+}
+#Donate {
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    transform: translate(-50%,0);
+    background: #F39200;
+    width: 150px;
+    padding: 15px 0;
+    font-size: 20px;
+}
+.option__forms__deposit img {
+    padding-top: 5px;
+}
 @media (max-width: 1199px) {
     .about__panel {
         width: 50%;
@@ -416,8 +506,35 @@
         font-size: 22px;
         line-height: 16px;
     }
+    .formContainer, .formContainer .formRow {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .formularz #userForm {
+        width: 100%;
+    }
+    .formResponsive .formHorizontal .formControlLabel {
+        width: 40% !important;
+    }
+    .formRow > div {
+        width: 100% !important;
+    }
+    .formResponsive .formRow [class*="formSpan"] {
+        margin-left: 0;
+    }
+    .formControlLabel {
+        font-size: 14px;
+    }
+    .formResponsive .formHorizontal .formControls{
+        margin-left: 0;
+    }
 }
 @media (max-width: 992px) { 
+    .popup {
+        display: none !important;
+    }
     .tm-header-mobile  {
         display: none;
     }
@@ -452,6 +569,18 @@
     }
 }
 @media (max-width: 767px) { 
+    .formResponsive .formHorizontal .rsform-block {
+        display: flex;
+        flex-direction: column;
+    }
+    .formResponsive .formHorizontal .formControlLabel {
+        width: 100% !important;
+        text-align: center;
+        margin: 20px 0 10px;
+    }
+    .formularz__intro {
+        flex-direction: column;
+    }
     .about__panel {
         width: 100%;
     }
@@ -506,6 +635,51 @@
     }
     .campaigns__icons > div {
         max-width: 100%;
+    }
+    .hero__contant {
+        display: none;
+    }
+    .hero__content__title, .campaigns__title, .list__text--down, .list__title {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .btn {
+        line-height: 56px;
+        font-size: 18px;
+    }
+    .hero{
+        padding: 30px 35px 120px;
+        text-align: center;
+    }
+    .about__panel__text {
+        line-height: 20px;
+    }
+    .about__panel__text::before {
+        top: 17px;
+    }
+    .option__text__up, .option__text__down {
+        font-size: 20px;
+        line-height: 26px;
+        padding: 0 10px;
+    }
+    .option__form {
+        width: 96%;
+        margin: 0 auto 50px;
+    }
+    .option__form p {
+        font-size: 16px;
+    }
+    .option__forms__deposit .btn a {
+        display: block;
+    }
+    .option__forms__deposit img {
+        padding-top: 5px;
+    }
+    .list__item--even, .list__item--odd {
+        margin-bottom: 50px;
+    }
+    .form--down form p, .form--down input[type=submit]:not([class*=uk-]), .form--down input[type=tel]:not([class*=uk-]) {
+        width: 96%;
     }
 }
 
